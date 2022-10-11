@@ -1,0 +1,63 @@
+Arguments: 
+  /Users/patricia/.nvm/versions/node/v16.15.1/bin/node /Users/patricia/.node/corepack/yarn/1.22.15/bin/yarn.js install
+
+PATH: 
+  /Users/patricia/.nvm/versions/node/v16.15.1/bin:/Users/patricia/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/patricia/.nvm/versions/node/v16.15.1/bin:/Users/patricia/.zinit/polaris/bin:/Users/patricia/bin:/Users/patricia/Android/Sdk/emulator:/Users/patricia/Android/Sdk/tools:/Users/patricia/Android/Sdk/tools/bin:/Users/patricia/Android/Sdk/platform-tools:/Users/patricia/Android/Sdk/emulator:/Users/patricia/Android/Sdk/tools:/Users/patricia/Android/Sdk/tools/bin:/Users/patricia/Android/Sdk/platform-tools
+
+Yarn version: 
+  1.22.15
+
+Node version: 
+  16.15.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Invariant Violation: could not find a copy of eslint to link in /Users/patricia/Documents/awer/helpawer/backend/node_modules/@rocketseat/eslint-config/node_modules
+      at invariant (/Users/patricia/.node/corepack/yarn/1.22.15/lib/cli.js:2314:15)
+      at PackageLinker.<anonymous> (/Users/patricia/.node/corepack/yarn/1.22.15/lib/cli.js:48516:7)
+      at Generator.next (<anonymous>)
+      at step (/Users/patricia/.node/corepack/yarn/1.22.15/lib/cli.js:310:30)
+      at /Users/patricia/.node/corepack/yarn/1.22.15/lib/cli.js:321:13
+      at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+npm manifest: 
+  {
+    "name": "helpawer-backend",
+    "version": "1.0.0",
+    "description": "awer",
+    "main": "src/server.js",
+    "repository": "",
+    "author": "Patricia Costa <patricosouza@hotmail.com>",
+    "license": "MIT",
+    "private": true,
+    "type": "module",
+    "scripts": {
+      "build": "babel src --extensions \".js\" --out-dir dist --copy-files",
+      "start": "nodemon src/server.js",
+      "start:debug": "nodemon --inspect src/server.js",
+      "lint": "eslint src --ext .ts,.tsx",
+      "lint:fix": "eslint src --ext .ts,.tsx --fix"
+    },
+    "devDependencies": {
+      "eslint": "^7.32.0",
+      "nodemon": "^2.0.12",
+      "@rocketseat/eslint-config": "^1.1.3"
+    },
+    "dependencies": {
+      "bcryptjs": "^2.4.3",
+      "cors": "^2.8.5",
+      "dotenv": "^10.0.0",
+      "express": "^4.17.1",
+      "express-async-errors": "^3.1.1",
+      "jsonwebtoken": "^8.5.1",
+      "yup": "^0.32.11"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
